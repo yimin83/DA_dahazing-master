@@ -1,0 +1,74 @@
+----------------- Options ---------------
+                 U_weight: 0.1                           
+               activation: PReLU                         
+                 all_loss: False                         
+                batchSize: 2                             	[default: 1]
+                    beta1: 0.5                           
+          checkpoints_dir: ./checkpoints                 
+           continue_train: False                         
+                 dataroot: ./datasets/dehazing           	[default: None]
+             dataset_mode: aligned                       
+             display_freq: 100                           
+               display_id: 1                             
+             display_port: 8091                          	[default: 8097]
+display_single_pane_ncols: 0                             
+          display_winsize: 256                           
+                drop_rate: 0                             
+              epoch_count: 1                             
+                 fineSize: 256                           
+                 gan_type: wgan-gp                       
+                  gpu_ids: 0                             
+           image_D_layers: 3                             
+            image_feature: 512                           
+                init_type: kaiming                       
+                 input_nc: 3                             
+                  isTrain: True                          	[default: None]
+                 lambda_A: 1.0                           
+                 lambda_B: 1.0                           
+          lambda_identity: 0.1                           
+           learn_residual: True                          	[default: False]
+                loadSizeX: 400                           
+                loadSizeY: 400                           
+                       lr: 0.0001                        
+                lr_policy: lambda                        
+                  lr_task: 0.0001                        
+                 lr_trans: 5e-05                         
+         max_dataset_size: inf                           
+                    model: cyclegan                      	[default: CycleGanmodel]
+                 nThreads: 2                             
+               n_layers_D: 3                             
+                     name: run_cyclegan                  	[default: experiment_name]
+                      ndf: 64                            
+                      ngf: 64                            
+                    niter: 90                            	[default: 200]
+              niter_decay: 0                             	[default: 200]
+               no_dropout: True                          
+                  no_flip: False                         
+                  no_html: True                          	[default: False]
+                 no_lsgan: False                         
+                     norm: batch                         
+                    num_D: 1                             
+                output_nc: 3                             
+               patch_size: 35                            
+                    phase: train                         
+                pool_size: 50                            
+               print_freq: 100                           
+           resize_or_crop: crop                          	[default: resize_and_crop]
+          save_epoch_freq: 1                             	[default: 5]
+         save_latest_freq: 5000                          
+                     semi: False                         
+           serial_batches: False                         
+                show_freq: 100                           
+              task_layers: 4                             
+          task_model_type: UNet                          
+         trans_model_type: ResNet                        
+         transform_layers: 9                             
+            unlabel_decay: 0.99                          	[default: 1.0]
+             update_ratio: 1                             	[default: 5]
+          which_direction: AtoB                          
+              which_epoch: latest                        
+         which_model_netD: basic                         
+         which_model_netG: resnet_9blocks                
+       which_model_netG_A: resnet_9blocks_depth          
+       which_model_netG_B: resnet_9blocks                
+----------------- End -------------------
